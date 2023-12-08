@@ -1,0 +1,234 @@
+.login .all-images {
+    position: relative;
+    background-image: url(/home-phones.png);
+    background-position: 0 0;
+    height: 581px;
+    background-size: 468.32px 634.15px;
+    background-repeat: no-repeat;
+    max-width: 450px;
+}
+
+.login .all-images img.screenshot {
+    position: absolute;
+    width: 250px;
+    right: 41px;
+    top: 25px;
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    margin-top: 45px;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.login>* {
+    flex: 1;
+}
+
+.username,
+.password {
+    position: relative;
+}
+
+.username span,
+.password span {
+    position: absolute;
+    padding-left: 15px;
+    top: 10px;
+    left: 15px;
+    color: rgb(102, 100, 100);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    z-index: -1;
+    transition: all 100ms linear;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 581px;
+    max-width: 356.23px;
+    margin: 15px 0 5px 0;
+}
+
+.input input {
+    border: 1px solid rgba(128, 128, 128, 0.41);
+    height: 40px;
+    border-radius: 2px;
+    margin: 0 20px 7px 20px;
+    width: 275px;
+    padding: 10px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.041);
+    font-size: 12px;
+    transition: all 100ms linear;
+}
+
+.username input:focus+span,
+.password input:focus+span {
+    color: rgba(128, 128, 128, 0.9);
+
+}
+
+.username input:focus,
+.password input:focus {
+    border: 1px solid rgba(111, 111, 111, 0.7);
+}
+
+.username input:valid,
+.password input:valid {
+    padding: 10px 10px 0 10px;
+}
+
+.username input:valid+span,
+.password input:valid+span {
+    top: 1px;
+    font-size: 10px;
+}
+
+.login .login-btn button {
+    font-size: 15px;
+    margin: 10px 20px;
+    text-align: center;
+    width: 275px;
+    background-color: #4cb5f9;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    transition: all 100ms linear;
+}
+
+.login .login-or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.login .login-or span:not(:nth-child(2)) {
+    width: 100%;
+}
+
+.login .login-or span:nth-child(2) {
+    font-size: 12px;
+    color: rgb(78, 77, 77);
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.login .login-with-fb button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-top: 10px;
+}
+
+.login .login-with-fb span:nth-child(2) {
+    color: #455185;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.login-by-mail {
+    padding: 0 20px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 2px;
+}
+
+.login .forget-password-link {
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+
+.login .forget-password-link a {
+    text-decoration: none;
+    color: #455185;
+    font-size: 12px;
+}
+
+.login .forget-password-link a:hover {
+    text-decoration: underline;
+    color: #455185;
+}
+
+.login .instagram-title {
+    margin: 36px 0;
+}
+
+.login .signup-link span p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.login .signup-link {
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.login .signup-link p a {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login .download-app .title p{
+    font-size: 14px;
+}
+.footer .footer-body a{
+    text-decoration: none;
+    color:grey;
+    font-size: 12px;
+}
+.footer .footer-body a:hover{
+    text-decoration: underline;
+}
+.footer .copyright p{
+    font-size: 12px;
+    color: grey;
+}
+
+@media (max-width:875px) {
+    .login .all-images {
+        display: none;
+    }
+}
+
+@media (max-width:472px) {
+    .login form {
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login form input {
+        width: 240px;
+    }
+
+    .login form .btn {
+        width: 240px;
+    }
+
+    .login form span {
+        font-size: 11px;
+        top: 17px;
+    }
+    .login .signup-link{
+        width: 271.24px;
+    }
+    .login .login-form{
+        align-items: center;
+    }
+}
