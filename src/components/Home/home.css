@@ -1,0 +1,242 @@
+.home > *{
+    color: white !important;
+}
+
+.home .side-bar svg {
+    width: 55px;
+    height: 55px;
+    padding: 10px 15px;
+    margin: 2px 0;
+}
+.icon img{
+    margin: 12px 15px;
+}
+.side-bar{
+    width: auto;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #ffffff24;    
+}
+
+.side-bar aside{
+    width: 72px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.instagram-home-logo{
+    padding-bottom: 30px;
+}
+.icon{
+    transition:all 300ms linear;
+}
+.icon:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.home{
+    width: 100%;
+    background-color: black;
+    min-height: 100vh !important;
+}
+.main{
+    margin-left: 72px;
+    display: flex;
+    justify-content: center;
+}
+.posts-stories {
+    max-width: 650px;
+}
+.story-profile {
+    margin:0 10px;
+    padding: 2px;
+    background: linear-gradient(45deg,#ffc700, #d300c4);
+    border-radius: 100%;
+    width: 70px;
+}
+.story-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    padding: 2.5px;
+    background-color: black;
+}
+.stories{
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.story p{
+    font-size: 13px;
+    padding: 0 2px;
+    margin-top: 4px !important;
+}
+.follow{
+    width: 382px;
+    padding: 0 0 0 64px;
+}
+.suggested-user-list{
+    padding: 10px 0;
+}
+.suggested-user-name p:first-child{
+    font-size: 14px;
+    font-weight: 600;
+}
+.suggested-text{
+    font-size: 12px;
+    font-weight: 100;
+}
+.follow a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.suggested-user{
+    padding: 8px 14px;
+}
+.follow a:hover{
+    color: white;
+}
+.suggestion-title p{
+    color: #a8a8a8;
+    font-size: 14px;
+    font-weight: 500;
+}
+.suggestion-title a{
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+}
+.suggestion-title a:hover{
+    color: #a8a8a8;
+}
+.suggestion-title{
+    padding: 4px 14px;
+}
+.footer-body li{
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+}
+.footer-body li:not(:last-child):after{
+    content: '.';
+    margin: 0 .25em;
+}
+.footer-body li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copy-right p{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+}
+.search input{
+    background: #262626;
+    border: none;
+    padding: 6px 36px;
+    border-radius: 7px;
+}
+.search-box{
+    position: relative;
+}
+.search-box svg{
+    padding: 0;
+    width: 20px;
+    left: 10px;
+    position: absolute;
+}
+.nav{
+    padding: 0 20px;
+    border-bottom: 1px solid #ffffff24;
+}
+.home footer{
+    margin-left: 72px;
+}
+.home .bottom-nav .instagram-activities {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    background: black;
+}
+.home .bottom-nav{
+    display: none;
+}
+
+
+
+
+@media (max-width:472px) {
+    .navbar-brand{
+        display: none;
+    }
+    .nav{
+        justify-content: center !important;
+    }
+    .search-box input {
+        padding: 6px 5px 8px 36px;
+    }
+    .notifications svg{
+        width: 30px;
+        height: 55px;
+        padding: 0;
+        margin-left: 15px;
+    }
+    .stories{
+        padding: 0;
+    }
+}
+@media (max-width:1160px) {
+    section.follow{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .side-bar{
+        display: none;
+    }
+    .main{
+        margin: 0;
+    }
+    .posts-stories{
+        width: 100vw;
+        margin-top: 7px !important;
+    }
+    .home footer{
+        margin-left: 0;
+    }
+    .home .bottom-nav{
+        display: block;
+    }
+    .home .bottom-nav .instagram-activities{
+        padding: 10px 0;
+        border-top: 1px solid #ffffff24;
+    }
+    .home .bottom-nav svg{
+        width: 25px;
+        height: 25px;
+        padding: 0;
+    }
+    .home .icon:last-child img{
+        margin: 0;
+        width: 25px;
+        height: 25px;
+    }
+    .home{
+        padding: 10px 0;
+    }
+}
+
+@media (min-width:767px) {
+    .nav{
+        display: none !important;
+    }
+}

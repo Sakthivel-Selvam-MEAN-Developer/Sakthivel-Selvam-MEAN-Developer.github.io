@@ -25,6 +25,7 @@
 
 .login>* {
     flex: 1;
+    color: black !important;
 }
 
 .username,
@@ -37,8 +38,8 @@
     position: absolute;
     padding-left: 15px;
     top: 10px;
-    left: 15px;
-    color: rgb(102, 100, 100);
+    left: 15px !important;
+    color: rgb(102, 100, 100) !important;
     font-size: 12px;
     text-overflow: ellipsis;
     z-index: -1;
@@ -69,7 +70,7 @@
 
 .username input:focus+span,
 .password input:focus+span {
-    color: rgba(128, 128, 128, 0.9);
+    color: rgba(128, 128, 128, 0.9) !important;
 
 }
 
@@ -94,10 +95,10 @@
     margin: 10px 20px;
     text-align: center;
     width: 275px;
-    background-color: #4cb5f9;
+    background-color: #4cb5f9 !important;
     border-radius: 10px;
     font-weight: 600;
-    color: white;
+    color: white !important;
     transition: all 100ms linear;
 }
 
@@ -114,7 +115,7 @@
 
 .login .login-or span:nth-child(2) {
     font-size: 12px;
-    color: rgb(78, 77, 77);
+    color: rgb(78, 77, 77) !important;
     margin: 0 20px;
     font-weight: 600;
 }
@@ -129,7 +130,7 @@
 }
 
 .login .login-with-fb span:nth-child(2) {
-    color: #455185;
+    color: #455185 !important;
     font-size: 14px;
     font-weight: 500;
     margin: 0 10px;
@@ -148,13 +149,13 @@
 
 .login .forget-password-link a {
     text-decoration: none;
-    color: #455185;
+    color: #455185 !important;
     font-size: 12px;
 }
 
 .login .forget-password-link a:hover {
     text-decoration: underline;
-    color: #455185;
+    color: #455185 !important;
 }
 
 .login .instagram-title {
@@ -181,6 +182,7 @@
     margin: 0 0 0 5px;
     text-decoration: none;
     font-weight: 500;
+    color: blue !important;
 }
 
 .login .download-app .title p{
@@ -188,7 +190,7 @@
 }
 .footer .footer-body a{
     text-decoration: none;
-    color:grey;
+    color:grey !important;
     font-size: 12px;
 }
 .footer .footer-body a:hover{
@@ -196,7 +198,7 @@
 }
 .footer .copyright p{
     font-size: 12px;
-    color: grey;
+    color: grey !important;
 }
 
 @media (max-width:875px) {

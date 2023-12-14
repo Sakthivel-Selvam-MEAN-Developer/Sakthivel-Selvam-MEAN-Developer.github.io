@@ -1,13 +1,13 @@
-import './login.css'
+import '../Login/login.css'
 
 const Footer = () => {
     const footer_body = ['Meta', 'About', 'Blog', 'Jobs', 'Help', 'API', 'Privacy', 'Terms', 'Locations', 'Instagram Lite', 'Threads', 'Contact uploading and non-users', 'Meta Verified']
 
     return (
-        <footer className='footer d-flex flex-column mb-5'>
+        <footer className='footer d-flex flex-column pb-4'>
             <div className="footer-body d-flex justify-content-center flex-wrap">
                 {footer_body.map(footer_value => (
-                    <a href="#" className='ms-2 mb-2 me-2'>
+                    <a href="#" className='ms-2 mb-2 me-2' key={footer_value}>
                         {footer_value} 
                     </a>
                 ))}

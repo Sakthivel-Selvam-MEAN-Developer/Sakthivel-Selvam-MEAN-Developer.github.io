@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import { useState } from "react"
-import { DownloadApp } from "./DownloadApp"
 import './login.css'
-import { Footer } from "./Footer"
+import { DownloadApp } from "../GetApp/DownloadApp"
+import { Footer } from "../Footer/Footer"
 
 const Login = () => {
     const [imageIndex, setImageIndex] = useState(0)
@@ -84,7 +84,7 @@ const Login = () => {
                             <span>
                                 <p>
                                     Don't have an account?
-                                    <a href="#">Sign up</a>
+                                    <a href="/signup">Sign up</a>
                                 </p>
                             </span>
                         </div>

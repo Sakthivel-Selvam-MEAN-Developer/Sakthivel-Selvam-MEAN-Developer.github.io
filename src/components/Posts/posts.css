@@ -1,0 +1,63 @@
+.posts .users{
+    max-width: 470px;
+    width: 100% !important;
+}
+.user-profile{
+    padding: 0 7px 10px 7px;
+}
+.post img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.post{
+    padding: 3px;
+}
+.user-profile-details p,
+.caption span{
+    font-size: 14px;
+}
+.activities svg{
+    padding: 8px;
+    width: 40px !important;
+    height:40px !important;
+}
+
+.comments textarea{
+    height: 30px;
+    color: white;
+    resize: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    width: -webkit-fill-available !important;
+}
+.comments textarea:valid + a{
+    display: block !important;
+}
+.modal .modal-header{
+    border-bottom: 1px solid #80808045;
+}
+.modal .modal-content{
+    max-width: 350px;
+}
+.modal-dialog{
+    min-height: 100vh;
+}
+.modal .modal-content p{
+    font-size: 14px;
+}
+.modal{
+    animation: anime 100ms linear;
+}
+
+@keyframes anime {
+    from{
+        transform: scale(1.3);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
