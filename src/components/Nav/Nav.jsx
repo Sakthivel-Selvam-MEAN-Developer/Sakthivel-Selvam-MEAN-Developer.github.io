@@ -2,7 +2,7 @@ const Nav = () => {
     return (
         <nav className='nav d-flex align-items-center justify-content-between'>
             <div className="navbar-brand">
-                <img src="../public/instagram-white.svg" alt="instagram" width={100} />
+                <img src="/instagram-white.svg" alt="instagram" width={100} />
             </div>
             <div className="search d-flex">
                 <div className="search-box d-flex align-items-center ">

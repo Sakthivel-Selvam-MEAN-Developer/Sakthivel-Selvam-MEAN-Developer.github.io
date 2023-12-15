@@ -15,53 +15,53 @@ const Home = () => {
     const currentUser = {
         name: 'Nazriya Nazim Fahad',
         username: 'nazriyafahad',
-        imgUrl: '../public/nazi.jpg'
+        imgUrl: '/nazi.jpg'
     }
     
     const users = [
         {
             name: 'sarayarkin',
-            imgUrl: '../public/sarayarkin.jpg'
+            imgUrl: '/sarayarkin.jpg'
         },
         {
             name: 'earth',
-            imgUrl: '../public/w-3.png'
+            imgUrl: '/w-3.png'
         },
         {
             name: 'dhariaartist',
-            imgUrl: '../public/dharia.jpg'
+            imgUrl: '/dharia.jpg'
         },
         {
             name: 'kitty_art',
-            imgUrl: '../public/w-2.png'
+            imgUrl: '/w-2.png'
         },
         {
             name: 'danger_man',
-            imgUrl: '../public/w-1.jpg'
+            imgUrl: '/w-1.jpg'
         },
         {
             name: 'nazriyafahad',
-            imgUrl: '../public/nazi.jpg'
+            imgUrl: '/nazi.jpg'
         },
         {
             name: 'mackenziefoy',
-            imgUrl: '../public/macken.jpg'
+            imgUrl: '/macken.jpg'
         },
         {
             name: 'honda_hrc',
-            imgUrl: '../public/honda.jpg'
+            imgUrl: '/honda.jpg'
         },
         {
             name: 'hero_motocorp',
-            imgUrl: '../public/hero.jpg'
+            imgUrl: '/hero.jpg'
         },
         {
             name: 'dqsalmaan',
-            imgUrl: '../public/dq.jpg'
+            imgUrl: '/dq.jpg'
         },
         {
             name: 'billybolt',
-            imgUrl: '../public/billy.jpg'
+            imgUrl: '/billy.jpg'
         }
     ]
 
