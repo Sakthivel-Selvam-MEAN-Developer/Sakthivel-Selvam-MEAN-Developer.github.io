@@ -54,7 +54,7 @@ const BottomNav = () => {
             </div>
             <div className="icon text-center">
                 <a href="#">
-                    <img src="../public/nazi.jpg" alt="current-user-profile-image" width={30} className='rounded-5' />
+                    <img src="/nazi.jpg" alt="current-user-profile-image" width={30} className='rounded-5' />
                 </a>
             </div>
         </div>

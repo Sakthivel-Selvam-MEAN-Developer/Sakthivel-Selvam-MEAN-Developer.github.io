@@ -28,7 +28,7 @@
     cursor: not-allowed;
     color: #136efd82;
 }
-.caption{
+.new-post-main .caption{
     width: 450px;
     padding: 15px 12px;
     display: flex;
