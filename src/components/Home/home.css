@@ -9,6 +9,7 @@
     margin: 2px 0;
 }
 .icon img{
+    border-radius: 100%;
     margin: 12px 15px;
 }
 .side-bar{
@@ -96,6 +97,9 @@
 .follow a{
     text-decoration: none;
     font-size: 12px;
+}
+.follow img{
+    border-radius: 100%;
 }
 .suggested-user{
     padding: 8px 14px;
