@@ -3,6 +3,7 @@ import { useState } from "react"
 import './login.css'
 import { DownloadApp } from "../GetApp/DownloadApp"
 import { Footer } from "../Footer/Footer"
+import { Link } from "react-router-dom"
 
 const Login = () => {
     const [imageIndex, setImageIndex] = useState(0)
@@ -81,13 +82,15 @@ const Login = () => {
                         </div>
                     </div>
                     <div className="signup-link">
-                            <span>
-                                <p>
-                                    Don't have an account?
-                                    <a href="/signup">Sign up</a>
-                                </p>
-                            </span>
-                        </div>
+                        <span>
+                            <p>
+                                Don't have an account?
+                                <Link to={'/signup'}>
+                                    <a href="#">Sign up</a>
+                                </Link>
+                            </p>
+                        </span>
+                    </div>
                     <DownloadApp />
                 </div>
             </article>
