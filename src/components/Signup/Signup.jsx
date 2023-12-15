@@ -2,6 +2,7 @@ import { Footer } from '../Footer/Footer'
 import { DownloadApp } from '../GetApp/DownloadApp'
 import './signup.css'
 import '../Login/login.css'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
     return (
@@ -19,7 +20,7 @@ const SignUp = () => {
                                 </div>
                                 <div className="login-with-fb ">
                                     <button className='btn d-flex justify-content-center align-items-center'>
-                                        <img src="./public/facebook-white.svg" alt="facebook-white" width={18} />
+                                        <img src="/facebook-white.svg" alt="facebook-white" width={18} />
                                         <span className='ps-2 text-white fw-semibold fs-6'>Log in with Facebook</span>
                                     </button>
                                 </div>
@@ -73,7 +74,9 @@ const SignUp = () => {
                                     <a href="#" className='text-decoration-none'> Cookies Policy</a>.
                                 </p>
                                 <div className="signup-btn mb-4">
-                                    <button className="btn">Sign Up</button>
+                                    <Link to={'/'}>
+                                        <button className="btn">Sign Up</button>
+                                    </Link>
                                 </div>
                             </form>
                         </div>
@@ -82,7 +85,9 @@ const SignUp = () => {
                         <span>
                             <p>
                                 Have an account?
-                                <a href="/" className='text-decoration-none'> Log in</a>
+                                <Link to={'/'}>
+                                    <a href="#" className='text-decoration-none'> Log in</a>
+                                </Link>
                             </p>
                         </span>
                     </section>
