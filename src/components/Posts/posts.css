@@ -22,6 +22,9 @@
     width: 40px !important;
     height:40px !important;
 }
+.user-profile-img img{
+    border-radius: 100%;
+}
 
 .comments textarea{
     height: 30px;

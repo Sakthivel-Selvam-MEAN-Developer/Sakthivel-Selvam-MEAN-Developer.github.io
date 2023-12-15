@@ -9,10 +9,18 @@
     position: fixed !important;
 }
 .newpost{
+    max-height: 868px;
+    max-width: 825px;
+    min-height: 491px;
+    min-width: 348px;
     width: 441px;
     background-color: #262626;
 }
 .new-post-caption{
+    max-height: 868px;
+    max-width: 825px;
+    min-height: 491px;
+    min-width: 348px;
     width: 781px;
     background-color: #262626;
 }
@@ -28,7 +36,7 @@
     cursor: not-allowed;
     color: #136efd82;
 }
-.new-post-main .caption{
+.new-post-caption .caption{
     width: 450px;
     padding: 15px 12px;
     display: flex;
@@ -60,7 +68,9 @@
 .caption-length span{
     color: #747474;
 }
-
+.user-image img{
+    border-radius: 100%;
+}
 
 @media (max-width:800px) {
     .new-post-caption{
@@ -83,5 +93,7 @@
 @media (max-width:457px) {
     .newpost{
         width: 100vw;
+        max-width: 0;
+        max-height: 0;
     }
 }
