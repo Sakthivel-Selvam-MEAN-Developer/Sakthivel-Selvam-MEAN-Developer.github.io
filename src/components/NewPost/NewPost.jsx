@@ -32,7 +32,7 @@ const NewPost = ({ currentUser, setNewPost }) => {
     // })
 
     return (
-        <div className="new-post-main rounded-4" id='new-post-main'>
+        <div className="new-post-main" id='new-post-main'>
             <div className={`d-flex justify-content-center ${next ? 'new-post-caption' : 'newpost'}`}>
                 <div className="new-post-body w-100 d-flex flex-column justify-content-start align-items-center">
                     <div className="modal-header p-2 w-100 d-flex justify-content-between">
