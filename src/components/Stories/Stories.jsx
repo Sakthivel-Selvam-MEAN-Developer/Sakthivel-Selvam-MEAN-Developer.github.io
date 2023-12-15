@@ -1,6 +1,6 @@
 const Stories = ({ users }) => {
     return (
-        <div className="stories d-flex overflow-x-scroll mb-2 pb-3 pt-2">
+        <div className="stories d-flex overflow-scroll mb-2 pb-3 pt-2">
             {users.map(story => (
                 <div key={story.name} className='story'>
                     <div className="story-profile">
