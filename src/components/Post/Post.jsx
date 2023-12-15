@@ -63,12 +63,12 @@ const Post = ({ users }) => {
                             </div>
                         </div>
                         <div className="likes-count ps-2">
-                            <p className='m-0'>14,099 likes</p>
+                            <p className='m-0'>{post.likes} likes</p>
                         </div>
                         <div className="caption ps-2 pt-2">
                             <div className="user-name">
                                 <span className='fw-bold m-0 pe-2'>{post.name}</span>
-                                <span className='fw-normal'>some sample etxt</span>
+                                <span className='fw-normal'>{post.caption}</span>
                             </div>
                         </div>
                         <div className="comments d-flex align-items-center">
