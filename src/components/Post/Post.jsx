@@ -1,7 +1,7 @@
 const Post = ({ users }) => {
     return (
         <>
-            {users.map(post => (
+            {users.slice(0).reverse().map(post => (
                 <div className="users pt-3 pb-1" key={post.name}>
                     <section className="user-profile d-flex justify-content-between">
                         <div className="user-profile-info d-flex align-items-center">

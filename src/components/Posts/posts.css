@@ -37,19 +37,22 @@
 }
 .modal .modal-header{
     border-bottom: 1px solid #80808045;
-}
-.modal .modal-content{
+  }
+  .modal .modal-content{
     max-width: 350px;
-}
-.modal-dialog{
+    background-color: #262626;
+  }
+  .modal-dialog{
     min-height: 100vh;
-}
-.modal .modal-content p{
+  }
+  .modal .modal-content p{
     font-size: 14px;
-}
-.modal{
+  }
+  .modal{
     animation: anime 100ms linear;
-}
+  }
+
+
 
 @keyframes anime {
     from{

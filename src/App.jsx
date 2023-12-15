@@ -5,7 +5,7 @@ import { SignUp } from './components/Signup/Signup'
 import { Home } from './components/Home/Home'
 
 function App() {
-
+  
   return (
     <>
       <Routes>

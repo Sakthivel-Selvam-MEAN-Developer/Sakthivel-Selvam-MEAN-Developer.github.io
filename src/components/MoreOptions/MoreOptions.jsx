@@ -1,6 +1,6 @@
 const MoreOptionsModal = () => {
     return (
-        <div className="modal fade" id="moreOptions" tabindex="-1" aria-labelledby="moreOptions" aria-hidden="true">
+        <div className="modal fade" id="moreOptions" tabIndex="-1" aria-labelledby="moreOptions" aria-hidden="true">
             <div className="modal-dialog d-flex justify-content-center align-items-center mt-0">
                 <div className="modal-content bg-dark">
                     <div className="modal-header d-flex flex-column">
