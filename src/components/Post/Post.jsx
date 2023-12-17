@@ -2,7 +2,7 @@ const Post = ({ users }) => {
     return (
         <>
             {users.slice(0).reverse().map(post => (
-                <div className="users pt-3 pb-1" key={post.name}>
+                <div className="users pt-3 pb-1" key={post.id}>
                     <section className="user-profile d-flex justify-content-between">
                         <div className="user-profile-info d-flex align-items-center">
                             <div className="user-profile-img">
@@ -10,6 +10,7 @@ const Post = ({ users }) => {
                             </div>
                             <div className="user-profile-details ms-3">
                                 <p className="fw-bold m-0">{post.name}</p>
+                                {post.location && <p className="fw-lighter m-0">{post.location}</p>}
                             </div>
                         </div>
                         <div className="user-actions d-flex align-items-center">
@@ -25,7 +26,7 @@ const Post = ({ users }) => {
                     </section>
                     <section className="post">
                         <div className="user-post">
-                            <img src={post.imgUrl} alt="sample" width={100} />
+                            <img src={post.postImgUrl} alt="sample" width={100} />
                         </div>
                     </section>
                     <section className="post-actions pt-1">

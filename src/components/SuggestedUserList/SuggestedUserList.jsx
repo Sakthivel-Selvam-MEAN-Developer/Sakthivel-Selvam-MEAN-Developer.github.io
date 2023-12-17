@@ -1,8 +1,8 @@
 const SuggestedUserList = ({ users }) => {
-    console.log(users)
+
     return (
         <div className="suggested-user-list">
-            {users.splice(0, 5).map(suggestion => (
+            {users.slice(0, 5).map(suggestion => (
                 <div className='suggested-user d-flex justify-content-between align-items-center' key={suggestion.name}>
                     <div className="suggested-user-profile d-flex align-items-center">
                         <img src={suggestion.imgUrl} alt={suggestion.name} width={50} className='rounded-5' />

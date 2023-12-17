@@ -1,35 +1,44 @@
 import { useState } from 'react'
 import './newpost.css'
+import { useDispatch } from 'react-redux'
+import { addPost } from '../Posts/postsSlice'
 
 const NewPost = ({ currentUser, setNewPost }) => {
 
-    const [imageUrl, setImageUrl] = useState('')
     const [next, setNext] = useState(false)
+    const dispatch = useDispatch()
     const [caption, setCaption] = useState('')
     const [location, setLocation] = useState('')
+    const [postImgUrl, setpostImgUrl] = useState('')
 
     const handleImageChange = (e) => {
-        setImageUrl(URL.createObjectURL(e.target.files[0]))
+        setpostImgUrl(URL.createObjectURL(e.target.files[0]))
     }
     const handleRemoveImage = () => {
-        if(next) {
-            if(confirm('Are you sure you go to Back?')) 
+        if (next) {
+            if (confirm('Are you sure you go to Back?'))
                 setNext(false)
-        } else if (imageUrl == '') {
+        } else if (postImgUrl == '') {
             if (confirm('Are you sure you want to Discard the Post?'))
                 setNewPost(false)
-        } else if (imageUrl != '') {
+        } else if (postImgUrl != '') {
             if (confirm('Are you sure you want to Delete the File?'))
-                setImageUrl('')
+                setpostImgUrl('')
         }
     }
 
-    // window.addEventListener('click', (e) => {
-    //     if(!document.getElementById('new-post-main').contains(e.target)) {
-    //         if (confirm('Are you sure you want to Discard the Post?'))
-    //             setNewPost(false)
-    //     }
-    // })
+    const handleAddNewPost = (e) => {
+        e.preventDefault()
+        setNext(true)
+        if (document.getElementById('add-post').innerText == 'Share') {
+            const likes = Math.floor(Math.random() * 100000)
+            setNewPost(false)
+            dispatch(
+                addPost(currentUser.username, postImgUrl, currentUser.imgUrl, location, likes, caption)
+            )
+        }
+
+    }
 
     return (
         <div className="new-post-main" id='new-post-main'>
@@ -43,13 +52,13 @@ const NewPost = ({ currentUser, setNewPost }) => {
                             <p className='mb-1 fw-semibold'>Create new post</p>
                         </div>
                         <div className="next-link pe-2">
-                            <a href="#" className={`text-decoration-none ${imageUrl == '' ? ' disabled-a' : ''}`} onClick={() => setNext(true)}>
+                            <a href="#" id='add-post' className={`text-decoration-none ${postImgUrl == '' ? ' disabled-a' : ''}`} onClick={(e) => handleAddNewPost(e)}>
                                 {next ? 'Share' : 'Next'}
                             </a>
                         </div>
                     </div>
                     <div className="select d-flex w-100 h-100">
-                        {imageUrl == '' ? (
+                        {postImgUrl == '' ? (
                             <div className="select-file w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                                 <div className="svg-icon">
                                     <svg aria-label="Icon to represent media such as images or videos" className="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="77" role="img" viewBox="0 0 97.6 77.3" width="96">
@@ -70,7 +79,7 @@ const NewPost = ({ currentUser, setNewPost }) => {
                         ) : (
                             <>
                                 <div className="selected-file-preview w-100 h-100 d-flex align-items-center" >
-                                    <img src={imageUrl} alt="image" className='w-100 h-100 object-fit-cover ' />
+                                    <img src={postImgUrl} alt="image" className='w-100 h-100 object-fit-cover ' />
                                 </div>
                                 {next && (
                                     <div className="caption d-flex flex-column">

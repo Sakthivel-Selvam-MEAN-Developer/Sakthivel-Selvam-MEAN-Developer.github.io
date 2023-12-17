@@ -45,6 +45,9 @@
 .selected-file-preview{
     border-top: 1px solid #ffffff24;
 }
+.selected-file-preview img{
+    object-fit: cover;
+}
 .current-user-profile{
     height: fit-content;
 }

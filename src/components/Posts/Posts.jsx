@@ -4,9 +4,7 @@ import './posts.css'
 
 const Posts = ({ users }) => {
 
-    const handleMoreOptions = (key) => {
-
-    }
+    
 
     return (
         <>
