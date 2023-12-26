@@ -105,7 +105,7 @@
     padding: 8px 14px;
 }
 .follow a:hover{
-    color: white;
+    color: white !important;
 }
 .suggestion-title p{
     color: #a8a8a8;
@@ -193,9 +193,8 @@
     }
     .notifications svg{
         width: 30px;
-        height: 55px;
+        height: 50px;
         padding: 0;
-        margin-left: 15px;
     }
     .stories{
         padding: 0;

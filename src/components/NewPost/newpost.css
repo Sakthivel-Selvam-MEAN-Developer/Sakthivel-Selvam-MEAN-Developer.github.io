@@ -13,6 +13,7 @@
     min-height: 335px;
     min-width: 278px;
     width: 441px;
+    height: 450px;
     background-color: #262626;
 }
 .new-post-caption{
@@ -44,6 +45,7 @@
 }
 .selected-file-preview{
     border-top: 1px solid #ffffff24;
+    height: 80vh !important;
 }
 .selected-file-preview img{
     object-fit: cover;
@@ -85,17 +87,17 @@
         flex-direction: column;
     }
     .new-post-caption{
-        margin: 0 10px;
-        width: 100vw !important;
+        width: 95vw !important;
     }
     .new-post-main .caption{
-        width: 100vw;
+        width: 95vw;
+    }
+    .selected-file-preview{
+        height: 50vh !important;
     }
 }
 @media (max-width:457px) {
     .newpost{
-        width: 100vw;
-        max-width: 0;
-        max-height: 0;
+        width: 95vw;
     }
 }

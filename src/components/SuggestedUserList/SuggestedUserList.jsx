@@ -1,4 +1,17 @@
+import { useState } from "react";
+
 const SuggestedUserList = ({ users }) => {
+    const [followingUsers, setFollowingUsers] = useState([])
+
+    const handleFollowEvent = (userId) => {
+        const isFollowing = followingUsers.includes(userId)
+
+        if (isFollowing) {
+            setFollowingUsers(followingUsers.filter((id) => id !== userId))
+        } else {
+            setFollowingUsers([...followingUsers, userId])
+        }
+    }
 
     return (
         <div className="suggested-user-list">
@@ -12,7 +25,9 @@ const SuggestedUserList = ({ users }) => {
                         </div>
                     </div>
                     <div className="follow-link">
-                        <a href="#" className='text-decoration-none'>Follow</a>
+                        <a href="#" style={{ color: followingUsers.includes(suggestion.id) ? 'grey' : '#0d6efd' }} className='text-decoration-none' onClick={() => handleFollowEvent(suggestion.id)}>
+                            {followingUsers.includes(suggestion.id) ? 'Following' : 'Follow'}
+                        </a>
                     </div>
                 </div>
             ))}

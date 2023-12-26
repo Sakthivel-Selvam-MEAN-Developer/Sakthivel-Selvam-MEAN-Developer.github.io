@@ -40,7 +40,7 @@ const Home = () => {
             </section>
             <Footer />
             <section className='bottom-nav'>
-                <BottomNav />
+                <BottomNav setNewPost={setNewPost} />
             </section>
             {newPost && <section className='addnewpost position-absolute'>
                 <NewPost 

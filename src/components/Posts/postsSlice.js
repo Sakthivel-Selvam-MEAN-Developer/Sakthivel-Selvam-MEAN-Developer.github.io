@@ -48,7 +48,7 @@ const initialState = [
         imgUrl: '/nazi.jpg',
         likes: 7567448,
         caption: 'Some Caption from Sara',
-        postImgUrl: '/nazi.jpg',
+        postImgUrl: '../public/2.jpeg',
         location: 'Kerala'
     },
     {
@@ -89,7 +89,8 @@ const initialState = [
         imgUrl: '/billy.jpg',
         likes: 18020,
         caption: 'Some Caption from Sara',
-        postImgUrl: '/billy.jpg'
+        postImgUrl: '../public/instagram__1680148334444.jpg',
+        location: 'California, US'
     }
 ]
 

@@ -6,7 +6,7 @@ const Nav = () => {
             </div>
             <div className="search d-flex">
                 <div className="search-box d-flex align-items-center ">
-                    <input type="text" placeholder='Search' />
+                    <input type="text" placeholder='Search' className="text-white" />
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title>Search</title>
                         <g id="SVGRepo_bgCarrier" strokeWidth="0" />
